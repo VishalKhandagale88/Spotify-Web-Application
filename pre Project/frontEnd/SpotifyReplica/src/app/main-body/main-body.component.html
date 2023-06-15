@@ -1,0 +1,42 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false" style="background-image: url('https://img.freepik.com/free-photo/vintage-grunge-blue-concrete-texture-studio-wall-background-with-vignette_1258-28513.jpg?w=996&t=st=1680354309~exp=1680354909~hmac=418b7bf63311a5fe1a2c6de27baad2bf81fd5020277f3c8025d25d39697a7f32');background-repeat: no-repeat;background-size: cover;" >
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="createPlaylist"(click)="alreadyLoggedIn()" >Create Playlist</a>
+      <a mat-list-item routerLink="viewPlaylist">Your playlists</a>
+      <a mat-list-item href="#">Link 2</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <button mat-raised-button color="primary" extended routerLink="">
+        SpotifyReplica
+      </button>
+      <span class="example-spacer"></span>
+      <div class="buttonDiv">
+        <button  *ngIf="userLoggedInButton"  mat-raised-button   (click)="alreadyLoggedIn()" matTooltip="Log in" color="primary"  >
+          <mat-icon>login</mat-icon>
+        </button>
+        <button  *ngIf="userLogOutButton"  mat-raised-button   (click)="logOutUser()" matTooltip="Log out" color="primary"  >
+          <mat-icon>logout</mat-icon>
+        </button>
+        <button *ngIf="userRegisterationButton" mat-raised-button (click)="checkForRegistration()" matTooltip="Register to spotify" color="primary"  >
+          <mat-icon>person_add</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

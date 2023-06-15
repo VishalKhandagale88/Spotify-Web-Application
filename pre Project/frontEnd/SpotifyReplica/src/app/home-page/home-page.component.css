@@ -1,0 +1,46 @@
+div{
+  display: flex;
+  flex-wrap: wrap;
+}
+mat-card{
+  margin: 0.3%;
+  background: rgba(176, 68, 235, 0.5);
+}
+#title h1{
+  font-size: 10vh;
+  color: rgb(179, 16, 179);
+  text-align: center;
+}
+#title{
+  height: 5.5vh;
+  width: 3vw;
+  border: 4px solid gold;
+  text-align: center;
+}
+mat-card-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#title-subtitle{
+  display: flex;
+  flex-direction: column;
+}
+body{
+  background-image: url("https://img.freepik.com/free-photo/drum-kit-dark-background-with-stage-lighting-copy-space_169016-14183.jpg?w=996&t=st=1680341352~exp=1680341952~hmac=03efb0def64f6afd2b2334018610adb41e560728255aa5716cd9fcc40085801a");
+  background-size: cover;
+}
+mat-card-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap : 1vw;
+}
+.playButton:hover{
+  color: aquamarine;
+}
+.pauseButton:hover{
+  color: aquamarine;
+}
+.addToPlayList:hover{
+  color: cornflowerblue;
+}

@@ -1,0 +1,37 @@
+body{
+  background-image: url("https://img.freepik.com/free-photo/music-keys-colored-lighting-blurred-background_169016-7311.jpg?w=1380&t=st=1680347279~exp=1680347879~hmac=efc21778a030475bf9d50c00e5777149b9db96cc915e3c9f3c58e1a121a43515");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.songCards{
+  background: rgba(176, 68, 235, 0.6);
+  border-radius: 8px;
+  box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  margin-left: 1vw;
+  margin-top: 1vh;
+}
+div{
+  display: flex;
+  flex-wrap: wrap;
+}
+.playButton:hover{
+  color: aquamarine;
+}
+.pauseButton:hover{
+  color: aquamarine;
+}
+.deleteBytton:hover{
+  color: red;
+}
+.example-card {
+  /* max-width: 95%; */
+  margin-top:1vh;
+  margin-left: 1vh;
+  background: rgba(176, 68, 235, 0.6);
+  border-radius: 8px;
+  box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+}

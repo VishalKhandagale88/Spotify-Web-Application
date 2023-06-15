@@ -1,0 +1,58 @@
+<body>
+  <div class="playlistCardsDiv">
+    <mat-card class="playlistsCard" *ngFor="let playlist of usersPlayList" class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{playlist.name}} </mat-card-title>
+        <mat-card-subtitle>{{playlist.song.name}} </mat-card-subtitle>
+        <mat-card-subtitle>{{playlist.song.artist}} </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>collection of all your favouite songs</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button class="viewButton" matTooltip="view this playlist" routerLink="/singlePlaylist/{{playlist.name}}">
+          <mat-icon>pageview</mat-icon>
+        </button>
+        <button mat-icon-button class="deleteButton" matTooltip="delete this playlist" (click)="deletePlayList(playlist.name)" >
+          <mat-icon>delete_forever</mat-icon>
+        </button>
+        <button mat-icon-button class="addeHereButton" matTooltip="add song here" (click)="addSongHere(playlist.name)" >
+          <mat-icon>library_add</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+
+
+  </div>
+
+  <div *ngIf="hideSnackBar" >
+    <mat-form-field appearance="fill">
+      <mat-label>Horizontal position</mat-label>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Vertical position</mat-label>
+    </mat-form-field>
+  </div>
+
+  <mat-card *ngIf="noPlaylistWithUser || playlistNotFoundError" class="example-card">
+    <mat-card-header>
+      <mat-card-subtitle>AddYour faourite songs in playlists as you want</mat-card-subtitle>
+      <mat-card-title>No playlists available</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{playlistNotFoundError}}</p>
+      <p>ADDD PLAYLIST HERE</p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+      <button  routerLink="../createPlaylist">CREATE</button>
+    </mat-card-actions>
+    <mat-card-footer>
+      <mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+
+  <div *ngIf="songExistsMessage" >
+
+  </div>
+</body>

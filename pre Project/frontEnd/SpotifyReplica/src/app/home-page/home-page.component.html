@@ -1,0 +1,26 @@
+<body>
+  <div>
+    <mat-card *ngFor="let song of allSongs">
+      <mat-card-header>
+        <mat-card-title id="title">
+          <h1>{{song.name.slice(0,1).toUpperCase()}}</h1>
+        </mat-card-title>
+        <div id="title-subtitle">
+          <mat-card-title>{{song.name}}</mat-card-title>
+          <mat-card-subtitle>{{song.artist}}</mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-icon-button class="playButton" matTooltip="play song" (click)="playSong(song.file)">
+          <mat-icon  matTooltip="play song"  >play_arrow</mat-icon>
+        </button>
+        <button class="pauseButton" matTooltip="pause song" mat-icon-button (click)="pauseSongTrack()">
+          <mat-icon>pause</mat-icon>
+        </button>
+        <button class="addToPlayList" matTooltip="add this song to your playlist" mat-icon-button routerLink="/viewPlaylist/{{song.name}}">
+          <mat-icon>playlist_add</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</body>

@@ -1,0 +1,31 @@
+<body>
+  <div class="registrationform">
+    <h3>Login to spotify</h3>
+    <form #userLogInForm="ngForm" (submit)="userLogIn()" >
+      <label>Email address</label>
+      <input type="email" placeholder="Email address"  name="email" #email="ngModel" [(ngModel)]="userLogInDetails.email" required email>
+      <div *ngIf="email.invalid && (email.touched || email.dirty)" >
+        <div *ngIf="email?.errors?.['required']">
+          <p>Email is required</p>
+        </div>
+        <div *ngIf="email?.errors?.['email']" >
+          <p>Not a valid email</p>
+        </div>
+      </div>
+      <label>Password</label>
+      <input type="text" placeholder="password" name="password" #password="ngModel" [(ngModel)]="userLogInDetails.password" required>
+      <div *ngIf="password.invalid && (password.touched || password.dirty)">
+        <div *ngIf="password?.errors?.['required']">
+          <p>Pass word is required</p>
+        </div>
+      </div>
+      <div class="buttondiv">
+        <button class="login-btn" routerLink="/login" [disabled]="userLogInForm.invalid" >Login</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="error-message" *ngIf="error" >
+    <h1>{{error}}</h1>
+  </div>
+</body>

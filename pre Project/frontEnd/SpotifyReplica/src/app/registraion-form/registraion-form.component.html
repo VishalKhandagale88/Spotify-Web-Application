@@ -1,0 +1,43 @@
+
+
+<body>
+  <div class="registrationform" >
+    <h3>Register to spotify</h3>
+    <form #userResitrationForm="ngForm" >
+      <label>User name</label>
+      <input type="text" placeholder="User Name" name="name" #nameOfUser="ngModel" [(ngModel)]="userDetails.name" required minlength="5" >
+      <div *ngIf="nameOfUser.invalid && (nameOfUser.touched || nameOfUser.dirty) ">
+        <div *ngIf="nameOfUser?.errors?.['minlength']">
+          <p>Minimum length of name should be 5 characters</p>
+        </div>
+        <div *ngIf="nameOfUser?.errors?.['required']">
+          <p>Name is required</p>
+        </div>
+      </div>
+      <label>Email address</label>
+      <input type="email" placeholder="Emial address" name="email" #emailAddress="ngModel" [(ngModel)]="userDetails.email" required email>
+      <div *ngIf="emailAddress.invalid && (emailAddress.touched || emailAddress.dirty)" >
+        <div *ngIf="emailAddress?.errors?.['required']" >
+          <p>Email address is required</p>
+        </div>
+        <div *ngIf="emailAddress?.errors?.['email']">
+          <p>Not a valid email</p>
+        </div>
+      </div>
+      <label>Password</label>
+      <input type="text" placeholder="password" name="password" #password="ngModel" [(ngModel)]="userDetails.password" required>
+      <div *ngIf="password.invalid && (password.touched || password.dirty)" >
+        <div *ngIf="password?.errors?.['required']">
+          <p>Password is required</p>
+        </div>
+      </div>
+      <div class="buttondiv">
+        <button class="register-btn" (click)="registerUser()" [disabled]="userResitrationForm.invalid" >Register</button>
+        <button class="login-btn" routerLink="/login" >Login</button>
+      </div>
+    </form>
+  </div>
+  <div class="error-message" *ngIf="error" >
+    <h1>{{error}}</h1>
+  </div>
+</body>

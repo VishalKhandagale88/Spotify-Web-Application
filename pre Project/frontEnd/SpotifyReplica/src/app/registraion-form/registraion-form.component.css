@@ -1,0 +1,70 @@
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 5px;
+}
+input{
+  height: 5vh;
+  background: rgba(176, 68, 235, 0.5);
+  border: none;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+p{
+  color: rgb(241, 236, 87);
+}
+label{
+  margin-top: 10px;
+}
+input::placeholder{
+  color: black;
+  font-size: medium;
+}
+.registrationform{
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 40%;
+  background: rgba(176, 68, 235, 0.5);
+  border-radius: 8px;
+  box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+}
+.buttondiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+}
+button{
+  width: 48%;
+  height: 5vh;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(171, 100, 237);
+  font-size: larger;
+  cursor: pointer;
+}
+.login-btn:hover{
+  background-color:rgb(180, 255, 173) ;
+}
+h3{
+  text-align: center;
+  font-size: x-large;
+  margin-top: 2vh;
+}
+.error-message{
+  text-align: center;
+  color: rgb(252, 0, 0);
+  background-color: rgb(241, 94, 236);
+}
+
+body{
+  background-image: url("https://img.freepik.com/free-photo/caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light_155003-32526.jpg?w=996&t=st=1680341126~exp=1680341726~hmac=8b31f9e3a1fea7367e7ce5832ff338f7a3a07633105509457dcc7669e87a52f4");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

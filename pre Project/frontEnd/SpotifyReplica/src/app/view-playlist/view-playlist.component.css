@@ -1,0 +1,28 @@
+.example-card {
+  /* max-width: 95%; */
+  margin-top:1vh;
+  margin-left: 1vh;
+  background: rgba(176, 68, 235, 0.6);
+  border-radius: 8px;
+  box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+}
+.playlistCardsDiv{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body{
+  background-image: url("https://img.freepik.com/free-photo/phone-with-music-icon-headphones-blurred-background-music-listening-concept-copy-space_169016-14360.jpg?w=996&t=st=1680346157~exp=1680346757~hmac=cd551e06076acb4dc3532d913442dbe1f4cb697c729426ee50d080b046ff1dba");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.deleteButton:hover{
+  color: red;
+}
+button{
+  height: 5vh;
+  border-radius: 10%;
+  border: none;
+}

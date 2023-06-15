@@ -1,0 +1,64 @@
+h3{
+  text-align: center;
+  font-size: x-large;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 5px;
+}
+input{
+  height: 5vh;
+  background: rgba(176, 68, 235, 0.5);
+  border: none;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+label{
+  margin-top: 10px;
+}
+input::placeholder{
+  color: black;
+  font-size: larger;
+}
+p{
+  color: rgb(241, 236, 87);
+}
+.registrationform{
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 40%;
+  background: rgba(176, 68, 235, 0.5);
+  border-radius: 8px;
+  box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+}
+.buttondiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+}
+button{
+  width: 48%;
+  height: 5vh;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(171, 100, 237);
+  font-size: larger;
+  cursor: pointer;
+}
+
+.error-message{
+  text-align: center;
+  color: rgb(252, 0, 0);
+  background-color: rgb(241, 94, 236);
+}
+body{
+  background-image: url("https://img.freepik.com/free-photo/closeup-black-electric-guitar-dark-background_169016-20381.jpg?w=1060&t=st=1680341384~exp=1680341984~hmac=5aeb54b88acfd10b617ad9a795381124095f9cdafdd1ecd8669fc14ba93c9388");
+  background-size: cover;
+}

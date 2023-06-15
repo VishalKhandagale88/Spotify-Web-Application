@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/EurekaAPIGateWay" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/EurekaServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UserAuthenticationService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UserSpotifyService" vcs="Git" />
+  </component>
+</project>

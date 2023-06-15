@@ -1,0 +1,40 @@
+<body>
+  <div>
+    <mat-card class="songCards" *ngFor="let song of selectedPalaylist">
+      <mat-card-header>
+        <mat-card-title>{{song.name}}</mat-card-title>
+        <mat-card-subtitle>{{song.artist}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+        <button  mat-icon-button class="playButton" matTooltip="play song"  (click)="playSelectedSong(song.file)" >
+          <mat-icon  matTooltip="play song"  >play_arrow</mat-icon>
+        </button>
+        <button  mat-icon-button class="playButton" matTooltip="pause song" (click)="pauseSelectedSong()" >
+          <mat-icon>pause</mat-icon>
+        </button>
+        <button  mat-icon-button class="deleteBytton" matTooltip="delete song from this playlist" (click)="deleteSong(song.name)" >
+          <mat-icon>delete_outline</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <mat-card *ngIf="noSongsPresentInPlayList || songNotFoundMessage" class="example-card">
+    <mat-card-header>
+      <mat-card-subtitle>Add all your favourite songs here</mat-card-subtitle>
+      <mat-card-title>No songs available</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{songsNotFoundError}}</p>
+      <p>all songs you addded in this playlist will be displayed here</p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- <button  routerLink="../createPlaylist">CREATE</button> -->
+    </mat-card-actions>
+    <mat-card-footer  >
+      <mat-progress-bar color="accent"  mode="indeterminate" ></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+
+</body>

@@ -1,0 +1,17 @@
+<body>
+  <div class="mainDiv">
+    <mat-label>Playlist name</mat-label>
+    <input matInput placeholder="playlist name" [(ngModel)]="playlistname" required="play list name is required">
+    <mat-label>songs</mat-label>
+    <mat-select [(ngModel)]="selectedSongObject" (click)="getAllSongsToSelect()">
+      <mat-option *ngFor="let song of songs" [value]="song">{{song.name}}</mat-option>
+    </mat-select>
+    <div class="buttondiv">
+      <button  (click)="getDetails()">create</button>
+    </div>
+  </div>
+
+  <div class="playlistErrorMessage" *ngIf="playlistAlreadyExists">
+    <p>{{playlistAlreadyExistsErrorMessage}}</p>
+  </div>
+</body>

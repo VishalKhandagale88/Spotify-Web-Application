@@ -1,0 +1,16 @@
+body{
+ background-image: url("https://img.freepik.com/free-photo/music-notes-sheet_144627-25498.jpg?w=996&t=st=1680351953~exp=1680352553~hmac=094d933593fb491793b34cd1e05860d39c8f6475e291d3dc75d408332e5a0ecf");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ color: black;
+}
+.mainDiv{
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+}

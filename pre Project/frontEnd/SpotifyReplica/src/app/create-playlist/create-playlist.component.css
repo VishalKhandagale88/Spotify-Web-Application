@@ -1,0 +1,44 @@
+.mainDiv{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 2%;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 40%;
+  background: rgba(176, 68, 235, 0.5);
+  border-radius: 8px;
+  box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 13px 11px 43px 0px rgba(0,0,0,0.75);
+}
+input{
+  height: 5vh;
+  border-radius: 1vh;
+  border: none;
+  margin-top: 0.1vh;
+}
+mat-label{
+  margin-top: 0.3vh;
+}
+button{
+  height: 5vh;
+  border-radius: 10%;
+  border: none;
+}
+button:hover{
+  background-color: rgb(154, 240, 236);
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.playlistErrorMessage{
+  background: rgba(176, 68, 235, 0.5);
+  width: fit-content;
+  display: flex;
+  margin-left:35% ;
+  border: 5px;
+}
