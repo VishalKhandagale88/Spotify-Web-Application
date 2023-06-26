@@ -1,64 +1,40 @@
 [
 {
-  "name": "song1",
-  "artist": "artist1",
-  "file": "path/missing"
+  "name": "Bulleya",
+  "artist": "Arjit singh",
+  "file": "../assets/Bulleya.wav"
 },
 {
-  "name": "song2",
-  "artist": "artist2",
-  "file": "path/missing"
+  "name": "Ide Kada",
+  "artist": "Vijay Prakash",
+  "file": "../assets/ide_kada.wav"
 },{
-  "name": "song3",
-  "artist": "artist3",
-  "file": "path/missing"
+  "name": "Katu kaise rata",
+  "artist": "Jubin Nautiyal & Asees Kaur",
+  "file": "../assets/Katu_Kaise_Rahta.wav"
 },{
-  "name": "song4",
-  "artist": "artist4",
-  "file": "path/missing"
+  "name": "Kaun tujhe",
+  "artist": "Palak munchal",
+  "file": "../assets/KAUN_TUJHE.wav"
 },{
-  "name": "song5",
-  "artist": "artist5",
-  "file": "path/missing"
+  "name": "nightlife",
+  "artist": "BOB",
+  "file": "../assets/nightlife.wav"
 },{
-  "name": "song6",
-  "artist": "artist6",
-  "file": "path/missing"
+  "name": "Rasiya",
+  "artist": "Arjit singh",
+  "file": "../assets/Rasiya.wav"
 },{
-  "name": "song7",
-  "artist": "artist7",
-  "file": "path/missing"
+  "name": "Tamil melody",
+  "artist": "Anirudh",
+  "file": "../assets/song2.wav"
 },{
-  "name": "song8",
-  "artist": "artist8",
-  "file": "path/missing"
+  "name": "Taman tan",
+  "artist": "Taman",
+  "file": "../assets/song3.wav"
 },{
-  "name": "song9",
-  "artist": "artist9",
-  "file": "path/missing"
-},{
-  "name": "song10",
-  "artist": "artist10",
-  "file": "path/missing"
-},{
-  "name": "song11",
-  "artist": "artist11",
-  "file": "path/missing"
-},{
-  "name": "song12",
-  "artist": "artist12",
-  "file": "path/missing"
-},{
-  "name": "song13",
-  "artist": "artist13",
-  "file": "path/missing"
-},{
-  "name": "song14",
-  "artist": "artist14",
-  "file": "path/missing"
-},{
-  "name": "song15",
-  "artist": "artist15",
-  "file": "path/missing"
+  "name": "Tu Jane Na",
+  "artist": "Atif Aslam",
+  "file": "../assets/Tu_Jaane_Na.wav"
 }
 ]
